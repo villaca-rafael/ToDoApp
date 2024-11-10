@@ -1,0 +1,41 @@
+.taskManagement {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.createdTasks {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.createdTasks span:nth-child(1) {
+   font-size: 0.875rem;
+   color: var(--blue-500);
+   font-weight: bold;
+}
+
+.completedTasks {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.completedTasks span:nth-child(1) {
+   font-size: 0.875rem;
+   color: var(--purple-500);
+   font-weight: bold;
+}
+
+.tasks {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+}

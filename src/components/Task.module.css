@@ -1,0 +1,71 @@
+.task {
+   padding: 1rem;
+   background-color: var(--gray-500);
+   border: 1px solid var(--gray-400);
+   box-shadow: 0px 2px 8px var(--gray-700);
+   border-radius: 8px;
+   
+   display: flex;
+   align-items: flex-start;
+   gap: 0.75rem;
+}
+
+.task button:nth-child(1) {
+   background: transparent;
+   border: 0;
+   cursor: pointer;
+}
+
+.task .buttonNotChecked {
+   color: var(--blue-700);
+
+   transition: color 0.2s;
+}
+
+.task .buttonNotChecked:hover {
+   color: var(--blue-500);
+}
+
+.task .buttonChecked {
+   color: var(--purple-700);
+
+   transition: color 0.2s;
+}
+
+.task .buttonChecked:hover {
+   color: var(--purple-500);
+}
+
+.taskContentChecked {
+   font-size: 0.875rem;
+   color: var(--gray-300);
+   font-weight: normal;
+   text-decoration: line-through;
+
+   flex: 1;
+}
+
+.taskContentNotChecked {
+   font-size: 0.875rem;
+   color: var(--gray-100);
+   font-weight: normal;
+
+   flex: 1;
+}
+
+.taskTrash {
+   background-color: transparent;
+   border: 0;
+   color: var(--gray-300);
+   line-height: 0;
+   border-radius: 4px;
+   cursor: pointer;
+
+   transition: color 0.2s;
+   transition: background-color 0.2s;
+}
+
+.taskTrash:hover {
+   background-color: var(--gray-400);
+   color: var(--red-500);
+}
