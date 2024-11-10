@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# To-Do List - Desafio Ignite ReactJS | Rocketseat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma solução para o primeiro desafio da trilha de **ReactJS** do **Ignite** da Rocketseat. Ele consiste em uma aplicação de controle de tarefas com funcionalidades de adição, marcação e exclusão de tarefas, além de mostrar o progresso de conclusão.
 
-Currently, two official plugins are available:
+## Sobre o Desafio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O objetivo desse desafio é reforçar conceitos fundamentais do ReactJS e aprender novos conceitos que serão utilizados em futuras aplicações.
 
-## Expanding the ESLint configuration
+### Funcionalidades Implementadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Adicionar uma nova tarefa
+- Marcar e desmarcar uma tarefa como concluída
+- Remover uma tarefa da lista
+- Exibir o progresso de tarefas concluídas
 
-- Configure the top-level `parserOptions` property like this:
+### Conceitos Utilizados
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Este projeto utiliza conceitos importantes do ReactJS, incluindo:
+- Gerenciamento de **Estados**
+- **Imutabilidade** do estado
+- Manipulação de **Listas**
+- **Propriedades** e **Componentização**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Ferramentas e Tecnologias
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **ReactJS**
+- **JavaScript (ES6+)**
+- **CSS Modules**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**Rocketseat Ignite - Trilha ReactJS**
